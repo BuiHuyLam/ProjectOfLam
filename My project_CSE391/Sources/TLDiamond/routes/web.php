@@ -1,0 +1,35 @@
+<?php
+
+/*
+|--------------------------------------------------------------------------
+| Web Routes
+|--------------------------------------------------------------------------
+|
+| Here is where you can register web routes for your application. These
+| routes are loaded by the RouteServiceProvider within a group which
+| contains the "web" middleware group. Now create something great!
+|,'middleware'=> 'auth'
+*/
+//group chứa nhiều file có tiền tố backend
+////'namespace'=>'Backend' thay thế đường dẫn trong 'uses' => 'HomeController@index', ở home.php
+///
+//Chèn group route của backend
+Route::group(['prefix' => 'backend', 'namespace'=>'Backend','middleware'=> 'auth'],function(){
+	require_once 'backend/home.php';
+	require_once 'backend/category.php';
+	require_once 'backend/user.php';
+	require_once 'backend/customer.php';
+	require_once 'backend/groups.php';
+	require_once 'backend/products.php';
+	require_once 'backend/order.php';
+	require_once 'backend/contact.php';
+	require_once 'backend/banner.php';
+
+
+
+	// require_once 'backend/category.php';
+});
+//route đăng nhập
+require_once 'auth.php';
+//route frontend
+require_once 'frontend.php';

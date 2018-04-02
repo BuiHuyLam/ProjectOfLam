@@ -1,0 +1,350 @@
+body {
+background: rgba(85, 85, 85, 1)#F7F6F1;
+}
+
+header .top-header{
+	margin-top: 15px;
+	font-size: 16px;
+	box-sizing: border-box;
+	text-align: center;
+}
+header .logo-header .icon-gio-hang{
+	padding-left: 50%;
+}
+
+header .logo-header{
+	position: relative;
+	height: 170px;
+}
+header .logo{
+	position: absolute;
+	left: 37%;
+	top: 10px;
+}
+header .gio-hang{
+	position: absolute;
+	right: 0;
+	top: 0;
+	float: right;
+}
+header .gio-hang{
+	position: relative;
+	display: block;
+	margin-top: 10px;
+}
+header .gio-hang a img{
+	margin-right: 100px;
+}
+header .count-pro{
+	position: absolute;
+	top: -8px;
+	right: 0;
+	color: #fff;
+	background: rgba(85, 85, 85, 0.882);
+	border-radius: 100%;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	font-size: 16px;
+	padding-top: 3px;
+	
+}
+
+
+.nav-home{
+	background: #F7F6F1;
+	border: none;
+}
+.nav-center {
+	width: 75%;
+	margin: 30px auto;
+	font-size: 20px;
+}
+.nav-center ul li{
+	margin-right: 10px;
+}
+.nav-home .nav-center ul li a:hover{
+	color: #bd8e26;
+}
+
+.my-menu a{
+	color: #777;
+}
+
+.cat-parent{
+	font-size: 22px;
+}
+.cat-parent a:hover{
+	text-decoration:none;
+}
+a.menu-cat-parent{
+	border-bottom: 1px solid #bd8e26;
+	padding: 10px 10px 5px 5px;
+}
+.cat-y{
+	font-size: 18px;
+}	
+
+.carousel-inner .item img{
+	width: 100%;
+	height: 780px;
+}
+
+/*Slider*/
+.slide-holder{
+margin:0 auto;
+position: relative;
+margin-top: 20px;
+/*background: #333*/
+}
+.slide-container { /*slide-container là khối bao mà slide-stage có thể "trượt" bên trong */
+height:400px;
+width: 100%;
+overflow: hidden;
+position:relative;
+}
+.slide-stage{
+position: absolute;
+}
+.slide-image { /*Độ rộng của .slide-image có thể được thay đổi theo nhu cầu, ảnh hưởng đến độ rộng chung của slideshow*/
+float:left;
+position:relative;
+text-align: center;
+/*overflow: hidden;*/
+/*height:800px;*/
+/*background: #333;*/
+} 
+.slide-size{
+	width: 288px;
+}
+.slide-image .image{
+	height: 10%;
+}
+.slide-image-hover-box{
+	/*width: 270px;*/
+	position: absolute;
+	width: 100%;
+	height: 200px;
+    left: 0;
+    right: 0;
+    top: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 30px;
+	margin-left: 10px;
+}
+
+.status-pro{ 
+	position: absolute;
+	left: 0;
+    /*right: 0;*/
+    top: 0;
+}
+
+.slide-image:hover .slide-image-hover-box .icon-cart a{
+	opacity: 1;
+}
+.slide-image-hover-box a{
+	/*margin-top: -110px;*/
+	background-color: rgba(0, 0, 0, .6);
+	background-image: url('{{url('/')}}/public/imgs/cart.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+	border-radius: 50%;
+	width: 90px;
+	height: 90px;
+	display: block;
+	opacity: 0;
+	transition: 0.7s opacity;
+}
+
+.slide-image-hover-box a img{
+	padding-top: 17px;
+}
+.slide-image .image img{
+	width: 90%;
+	height: 200px;
+	margin:0 5%;
+	border-radius: 5px;
+}
+
+.slide-pager{
+	position: absolute;
+	width: 100%;
+	top: 110px;
+	/*z-index: 1000  cái nào có z-index lớn hơn sẽ nổi ở trên*/
+}
+.slide-control-prev {
+	text-align: center;
+	width: 40px;
+	cursor: pointer;
+	transform: translateX(-70%);
+	float: left
+}
+.slide-control-prev img,
+.slide-control-next img{
+	width: 100%;
+}
+.slide-control-next{
+	text-align: center;
+	width: 40px;
+	cursor: pointer;
+	transform: translateX(70%);
+	float: right
+}
+.content-pro{
+	margin-top: 20px;
+}
+.content-pro h4#price{
+	margin-bottom: 20px;
+}
+
+.footer-banner{
+	width: 100%;
+	float: left;
+}
+.icon{
+	width: 10%;
+	float: left;
+	margin-top: 18px;
+}
+.content-email{
+	width: 90%;
+	float: left;
+	padding-left: 30px;
+}
+
+.foot-main{
+	margin-top: 80px; 
+	margin-bottom: 80px;
+}
+main .foot-main .dk-email{
+	float: right;
+	padding-top: 30px;
+}
+.dk-email input{
+	padding: 20px 10px;
+}
+.dk-email button{
+	background-color: #49cbc9;
+	border-color: #49cbc9;
+	border-radius: 0;
+	font-size: 18px;
+}
+.dk-email button:hover{
+	background-color: #49cbc9;
+	border-color: #49cbc9;
+}
+
+.link-nav{
+	margin-bottom: 50px;
+	color: #bd8e26;	
+	font-family: Arial;
+}
+.link-nav a{
+	color: #777;
+}
+.link-nav a:hover{
+	color: #bd8e26;
+	font-weight: bold;
+}
+
+/*category*/
+.right-cat .category table{
+	font-size: 20px;
+	width: 100%;
+}
+.right-cat caption{
+	font-size: 22px;
+}
+.pro-cat{
+	margin-bottom: 30px;
+	float: left;
+}
+.category, .loc-gia , .hotpro{
+	margin-left: 20px;
+	margin-bottom: 30px;
+	height: 100%;
+}
+.category h3,
+.loc-gia h3,
+.hotpro h3{
+	margin-top:0;
+	color: #333;
+}
+.loc-gia .btn,
+.hotpro .btn{
+	float: left;
+}
+.category>ul>li{
+	margin-top: 15px;
+	border-bottom: 1px dashed #bbb;
+}
+.category>ul{
+	padding: 0;
+}
+.category ul li a:hover{
+	color: #bd8e26;
+}
+.loc-gia label{
+	font-weight: normal; font-size: 15px;
+}
+.loc-gia label:hover{
+	color: #bd8e26;
+}
+.hotpro{
+	padding-top: 30px;
+}
+.hotpro p{
+	font-size: 13px;
+	margin-bottom: 0px;
+}
+.prhot{
+	margin-top: 40px;
+	height: 80px;
+}
+
+/*contact*/
+.td1{
+	font-size: 18px;
+	width: 150px; 
+	text-align: right;
+	padding-right: 20px;" 
+}
+.td2{
+	height: 70px;
+	width: 400px; 	
+}
+button{
+	float: right;
+}
+.btnG{
+	padding: 15px 25px;
+	font-size: 18px;
+	background: #7fcbc9;
+	border-color: #7fcbc9;
+	border-radius: 0;
+}
+.btnG:hover{
+	background-color: #6dbfc9;
+	border-color: #6dbfc9
+}
+.info {
+	padding-left: 80px;
+	font-size: 16px;
+}
+.info h2{
+	margin-top: -16px;
+	margin-bottom: 25px;<div class="link-nav"><h4><a href="">Trang chủ</a> <span class="glyphicon glyphicon-menu-right"></span> Liên hệ</h4></div>
+	margin-left: -15px;
+}
+
+/*order*/
+
+footer{
+	margin-top: 90px;
+	border-top: 1px solid #ddd;
+	padding-top: 50px;
+	margin-bottom: 30px
+}
